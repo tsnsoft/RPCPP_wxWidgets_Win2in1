@@ -44,16 +44,16 @@ UseUTF8 = 1
 
 
 [Unit1]
-FileName = controls.cpp
-CompileCpp = 1
-Folder = Sources
-Compile = 1
-Link = 1
+FileName = forms.fbp
+CompileCpp = 0
+Folder = Others
+Compile = 0
+Link = 0
 Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = UTF-8
+RealEncoding = ASCII
 
 
 [VersionInfo]
@@ -103,7 +103,7 @@ RealEncoding = ASCII
 
 
 [Unit4]
-FileName = forms.cpp
+FileName = controls.cpp
 CompileCpp = 1
 Folder = Sources
 Compile = 1
@@ -112,15 +112,15 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = ASCII
+RealEncoding = UTF-8
 
 
 [Unit5]
-FileName = forms.fbp
+FileName = forms.cpp
 CompileCpp = 1
-Folder = Others
-Compile = 0
-Link = 0
+Folder = Sources
+Compile = 1
+Link = 1
 Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 

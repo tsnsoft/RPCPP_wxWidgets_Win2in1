@@ -13,10 +13,10 @@ CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-pipe" "-mthreads" "-D__GNUWIN32__"
 CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 WINDRESFLAGS = 
 RES      = wxWidgets_Win2in1_private.res
-OBJ      = controls.o main.o forms.o $(RES)
+OBJ      = main.o controls.o forms.o $(RES)
 BIN      = wxWidgets_Win2in1.exe
-LINKOBJ  = "controls.o" "main.o" "forms.o" "wxWidgets_Win2in1_private.res"
-CLEANOBJ = "controls.o" "main.o" "forms.o" "wxWidgets_Win2in1_private.res" "wxWidgets_Win2in1.exe"
+LINKOBJ  = "main.o" "controls.o" "forms.o" "wxWidgets_Win2in1_private.res"
+CLEANOBJ = "main.o" "controls.o" "forms.o" "wxWidgets_Win2in1_private.res" "wxWidgets_Win2in1.exe"
 
 .PHONY: all all-before all-after clean clean-custom
 
@@ -29,11 +29,11 @@ wxWidgets_Win2in1.exe: $(OBJ)
 
 	$(CXX) $(LINKOBJ) -o "wxWidgets_Win2in1.exe" $(LIBS)
 
-controls.o: controls.cpp forms.h main.h
-	$(CXX) -c "controls.cpp" -o "controls.o" $(CXXFLAGS) 
-
 main.o: main.cpp forms.h main.h
 	$(CXX) -c "main.cpp" -o "main.o" $(CXXFLAGS) 
+
+controls.o: controls.cpp forms.h main.h
+	$(CXX) -c "controls.cpp" -o "controls.o" $(CXXFLAGS) 
 
 forms.o: forms.cpp forms.h main.h
 	$(CXX) -c "forms.cpp" -o "forms.o" $(CXXFLAGS) 
