@@ -1,38 +1,38 @@
-#ifndef __main__ // Если не определен макрос __main__
-#define __main__ // То определить его
+#ifndef __main__ // Р•СЃР»Рё РЅРµ РѕРїСЂРµРґРµР»РµРЅ РјР°РєСЂРѕСЃ __main__
+#define __main__ // РўРѕ РѕРїСЂРµРґРµР»РёС‚СЊ РµРіРѕ
 
-#include <wx/wx.h> // Подключение библиотеки wxWidgets
-#include "forms.h" // Подключение заголовочного файла формы 1
+#include <wx/wx.h> // РџРѕРґРєР»СЋС‡РµРЅРёРµ Р±РёР±Р»РёРѕС‚РµРєРё wxWidgets
+#include "forms.h" // РџРѕРґРєР»СЋС‡РµРЅРёРµ Р·Р°РіРѕР»РѕРІРѕС‡РЅРѕРіРѕ С„Р°Р№Р»Р° С„РѕСЂРјС‹ 1
 
 
-// Описываем основной класс приложения на базе wxApp
+// РћРїРёСЃС‹РІР°РµРј РѕСЃРЅРѕРІРЅРѕР№ РєР»Р°СЃСЃ РїСЂРёР»РѕР¶РµРЅРёСЏ РЅР° Р±Р°Р·Рµ wxApp
 class App : public wxApp {
 public:
-	virtual bool OnInit(); // Метод инициализации приложения
+	virtual bool OnInit(); // РњРµС‚РѕРґ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РїСЂРёР»РѕР¶РµРЅРёСЏ
 };
 
-DECLARE_APP(App) // Макрос для создания экземпляра класса приложения
+DECLARE_APP(App) // РњР°РєСЂРѕСЃ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЌРєР·РµРјРїР»СЏСЂР° РєР»Р°СЃСЃР° РїСЂРёР»РѕР¶РµРЅРёСЏ
 
-// Описываем класс главной формы 1 на оснвое класса Frame1
+// РћРїРёСЃС‹РІР°РµРј РєР»Р°СЃСЃ РіР»Р°РІРЅРѕР№ С„РѕСЂРјС‹ 1 РЅР° РѕСЃРЅРІРѕРµ РєР»Р°СЃСЃР° Frame1
 class Form1 : public Frame1 {
 public:
-	Form1(wxWindow* parent); // Конструктор
-	virtual ~Form1(); // Деструктор
+	Form1(wxWindow* parent); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+	virtual ~Form1(); // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 protected:
-	virtual void OnCloseFrame(wxCloseEvent& event); // Обработчик события закрытия формы
-	virtual void myClick(wxCommandEvent& event); // Обработчик события нажатия кнопки
+	virtual void OnCloseFrame(wxCloseEvent& event); // РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ Р·Р°РєСЂС‹С‚РёСЏ С„РѕСЂРјС‹
+	virtual void myClick(wxCommandEvent& event); // РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ РєРЅРѕРїРєРё
 };
 
-// Описываем класс главной формы 2 на оснвое класса Frame2
+// РћРїРёСЃС‹РІР°РµРј РєР»Р°СЃСЃ РіР»Р°РІРЅРѕР№ С„РѕСЂРјС‹ 2 РЅР° РѕСЃРЅРІРѕРµ РєР»Р°СЃСЃР° Frame2
 class Form2 : public Frame2 {
 public:
-	Form2(wxWindow* parent); // Конструктор
-	virtual ~Form2(); // Деструктор
+	Form2(wxWindow* parent); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+	virtual ~Form2(); // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 protected:
-	virtual void OnCloseFrame(wxCloseEvent& event); // Обработчик события закрытия формы
-	virtual void myClick(wxCommandEvent& event); // Обработчик события нажатия кнопки назад
-	virtual void myExit(wxCommandEvent& event); // Обработчик события нажатия кнопки выхода
-	virtual void OnShow(wxShowEvent& event); // Обработчик события показа формы
+	virtual void OnCloseFrame(wxCloseEvent& event); // РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ Р·Р°РєСЂС‹С‚РёСЏ С„РѕСЂРјС‹
+	virtual void myClick(wxCommandEvent& event); // РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ РєРЅРѕРїРєРё РЅР°Р·Р°Рґ
+	virtual void myExit(wxCommandEvent& event); // РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ РєРЅРѕРїРєРё РІС‹С…РѕРґР°
+	virtual void OnShow(wxShowEvent& event); // РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ РїРѕРєР°Р·Р° С„РѕСЂРјС‹
 };
 
-#endif //__main__ // Конец условной компиляции
+#endif //__main__ // РљРѕРЅРµС† СѓСЃР»РѕРІРЅРѕР№ РєРѕРјРїРёР»СЏС†РёРё

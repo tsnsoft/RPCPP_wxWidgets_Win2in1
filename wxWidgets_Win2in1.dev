@@ -44,16 +44,16 @@ UseUTF8 = 1
 
 
 [Unit1]
-FileName = tsnsoft.xpm
+FileName = controls.cpp
 CompileCpp = 1
-Folder = Others
-Compile = 0
-Link = 0
+Folder = Sources
+Compile = 1
+Link = 1
 Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = ASCII
+RealEncoding = UTF-8
 
 
 [VersionInfo]
@@ -77,19 +77,6 @@ SyncProduct = 1
 
 
 [Unit2]
-FileName = controls.cpp
-CompileCpp = 1
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
-
-
-[Unit3]
 FileName = main.cpp
 CompileCpp = 1
 Folder = Sources
@@ -102,8 +89,47 @@ FileEncoding = PROJECT
 RealEncoding = UTF-8
 
 
-[Unit4]
+[Unit3]
 FileName = forms.fbp
+CompileCpp = 1
+Folder = Others
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit4]
+FileName = main.h
+CompileCpp = 0
+Folder = Headers
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit5]
+FileName = forms.h
+CompileCpp = 0
+Folder = Headers
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit6]
+FileName = tsnsoft.xpm
 CompileCpp = 0
 Folder = Others
 Compile = 0
@@ -115,7 +141,7 @@ FileEncoding = PROJECT
 RealEncoding = ASCII
 
 
-[Unit5]
+[Unit7]
 FileName = forms.cpp
 CompileCpp = 1
 Folder = Sources
@@ -125,33 +151,7 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = ASCII
-
-
-[Unit6]
-FileName = forms.h
-CompileCpp = 0
-Folder = Headers
-Compile = 0
-Link = 0
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = ASCII
-
-
-[Unit7]
-FileName = main.h
-CompileCpp = 0
-Folder = Headers
-Compile = 0
-Link = 0
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = ASCII
+RealEncoding = UTF-8
 
 
 [CompilerSettings]
