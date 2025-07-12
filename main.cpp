@@ -21,7 +21,6 @@ bool App::OnInit() {
 
 // Реализуем конструктор формы 1
 Form1::Form1(wxWindow* parent) : Frame1(parent) {
-	wxInitAllImageHandlers(); // Инициализируем все обработчики изображений
 	this->SetIcon(wxIcon(tsnsoft_xpm)); // Устанавливаем иконку для формы
 	this->Center();
 	this->SetPosition(wxPoint(-1, -1)); 
